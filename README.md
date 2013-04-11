@@ -1,4 +1,4 @@
-MDD1304
+MDD1304 Taryn Taylor
 =======
 
-Repository for MDD Class at Full Sail
+Bookworm is an application for users to track, store and share information about books they have read. Users can log books read, rate them, review them, and share with Facebook.
