@@ -70,16 +70,23 @@
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+				<?php 
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
+					foreach($results as $row){
+						echo "Title: ";
+						echo $row->title;
+						echo "<br />Author: ";
+						echo $row->author;
+						echo "<br />Favorite Quote: ";
+						echo $row->quote;
+						echo "<br />Review: ";
+						echo $row->review;
+						echo "<br />Favorite: ";
+						echo $row->favorite;
+					}
+				?>
+				
+</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 </div>
