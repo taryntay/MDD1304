@@ -25,6 +25,12 @@
 		
 			$this->load->view('details_view', $data);
 		}
+		
+		public function add(){
+		
+			$this->load->model('bookworm_model');
+
+		}
     }  
      
 ?>  
