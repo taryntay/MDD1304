@@ -9,11 +9,12 @@
 </head>
 
 <body>
+
 	<div id="fb-root"></div>
-	
-<!-- Facebook Log In with JS SDK -->
+
+	<!-- Facebook Log In with JS SDK -->
 	<script>
- 	 window.fbAsyncInit = function() {
+  window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
       appId      : '539717602746861',                        // App ID from the app dashboard
@@ -23,21 +24,21 @@
     });
     
     FB.getLoginStatus(function(response) {
- 	 if (response.status === 'connected') {
+  if (response.status === 'connected') {
     // connected
- 	 } else if (response.status === 'not_authorized') {
+  } else if (response.status === 'not_authorized') {
     // not_authorized
     login();
- 	 } else {
+  } else {
     // not_logged_in
     login();
- 	 }
-	 });
+  }
+ });
 
     // Additional initialization code such as adding Event Listeners goes here
- 	 };
+  };
  
- 
+
   // Load the SDK asynchronously
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
@@ -47,26 +48,25 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
    
-    function login() {
-    	FB.login(function(response) {
-       	 if (response.authResponse) {
+     function login() {
+    FB.login(function(response) {
+        if (response.authResponse) {
             // connected
         } else {
             // cancelled
         }
-   		 });
-	}
-	
+    });
+ 
+}
 	</script>
-
+	
 	<div id="container">
 
 		<div id="body">
-	
 		<!-- Facebook Log In Button -->
 		<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
 		<img src="http://localhost:8888/MDD1304/assets/images/logo.png">
-		
+ 
 		<h2>Recent Books</h2>
 				<?php 
 	
