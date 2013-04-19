@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Book Worm</title>
 	<link rel="stylesheet" type="text/css" href="http://localhost:8888/MDD1304/assets/css/main.css">
+	<link href="../../libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../libraries/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -65,7 +67,7 @@
 		<div id="body">
 		<!-- Facebook Log In Button -->
 		<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
-		<img src="http://localhost:8888/MDD1304/assets/images/logo.png">
+		<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
  
 		<h2>Recent Books</h2>
 				<?php 
@@ -77,10 +79,11 @@
 						echo "<br />";
 					}
 				?>
-				<p><a href="">Add a Book</a></p>
+				<p><a><a href="">Add a Book</a></p>
 		</div>
 
 	</div>
-
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
