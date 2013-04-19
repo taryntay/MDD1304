@@ -10,6 +10,7 @@
 <div id="container">
 
 	<div id="body">
+	<img src="http://localhost:8888/MDD1304/assets/images/logo.png"><p></p>
 				<?php 
 
 					foreach($results as $row){

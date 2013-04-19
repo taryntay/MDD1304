@@ -10,6 +10,7 @@
 <div id="container">
 
 	<div id="body">
+		<img src="http://localhost:8888/MDD1304/assets/images/logo.png">
 		<h2>Recent Books</h2>
 				<?php 
 	
@@ -20,7 +21,7 @@
 						echo "<br />";
 					}
 				?>
-				<a href="">Add a Book</a>
+				<p><a href="">Add a Book</a></p>
 	</div>
 
 </div>
