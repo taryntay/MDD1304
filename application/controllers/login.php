@@ -61,6 +61,8 @@
 				$this->load->model('user_model'); //load the user model to create a new user to the database.
 				if($query = $this->user_model->create_user()) //if user is created..
 				{
+					$this->load->model('user_model');
+					$data['results'] = $this->user_model->getUser();
 					$data['main_content'] = 'signup_successful'; //show success page.
 					$this->load->view('includes/template', $data);
 				}
