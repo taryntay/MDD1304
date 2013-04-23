@@ -15,17 +15,31 @@
 	<h2>Create</h2>
 	<?php echo form_open('site/add');?>
 	<p>
-		<label for="title">Title</label>
+		<label for="title">Title:</label>
 		<input type="text" name="title" id="title" />
 	</p>
 	
 	<p>
-		<label for="author">Author</label>
+		<label for="author">Author:</label>
 		<input type="text" name="author" id="author" />
+	</p>
+	<p>
+		<label for="quote">Favorite Quote:</label>
+		<input type="text" name="quote" id="quote" />
+	</p>
+	<p>
+		<label for="review">Review:</label>
+		<textarea rows="4" cols="20" name="review" id="review"></textarea>
+	</p>
+	<p>
+		<label for="favorite">Add to Favorites?</label>
+		<input type="radio" name="favorite" value="Yes">Yes<br>
+		<input type="radio" name="favorite" value="No">No
 	</p>
 	<p>
 		<input type="submit" value="submit">
 	</p>
+	
 	<?php echo form_close();?>
 	<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
 	

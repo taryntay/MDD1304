@@ -11,7 +11,8 @@
 						echo "<br />";
 					}
 				?>
-			<p><br /><?php echo anchor('site/create', 'Add a Book', 'Add books');?></p>
-			<p><?php echo anchor('login/logout', 'Logout', 'Logout');?></p>
+
+		<?php echo form_open('site/create');?><p><input type="submit" value="Add a Book"></p><?php echo form_close();?><?php echo form_open('login/logout');?><input type="submit" value="Logout"><?php echo form_close();?>
+
 </div>
 </div>

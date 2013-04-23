@@ -60,7 +60,10 @@
 		{
 			$data = array(
 				'title' => $this->input->post('title'),
-				'author' => $this->input->post('author')
+				'author' => $this->input->post('author'),
+				'quote' => $this->input->post('quote'),
+				'review' => $this->input->post('review'),
+				'favorite' => $this->input->post('favorite')
 			);
 			//takes info from the input forms on the create view.
 		
@@ -94,7 +97,10 @@
 		
 			$data = array(
 				'title' => $this->input->post('title'),
-				'author' => $this->input->post('author')
+				'author' => $this->input->post('author'),
+				'quote' => $this->input->post('quote'),
+				'review' => $this->input->post('review'),
+				'favorite' => $this->input->post('favorite')
 			);
 			//takes the data from the inputs on the update view.
 			

@@ -35,6 +35,7 @@
 		<?php echo form_open("site/delete/$row->bookId");?>
 		<p>
 			<input type="submit" value="Delete">
+			<br />Warning: Deleting a book cannot be undone.
 		</p>
 		<?php echo form_close();?>
 		

@@ -11,9 +11,15 @@
 
 /* ---------------------------Anchors-------------------------- */
 	a {
-		color: #003399;
+		color: #f15a24;
 		background-color: transparent;
 		font-weight: normal;
+		text-decoration: none;
+		font-size: 1em;
+	}
+	
+	a:hover {
+		color: #333;
 	}
 	
 /* ---------------------------Headers-------------------------- */

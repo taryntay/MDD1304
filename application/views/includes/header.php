@@ -6,8 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Book Worm</title>
 	<link rel="stylesheet" type="text/css" href="http://localhost:8888/MDD1304/assets/css/main.css">
-	<link href="../../libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="../../libraries/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
 <h1>Hi there!</h1>

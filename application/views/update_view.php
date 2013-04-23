@@ -16,6 +16,20 @@ foreach($results as $row){}
 		<input type="text" name="author" id="author" value="<?php echo $row->author; ?>"/>
 	</p>
 	<p>
+		<label for="quote">Favorite Quote:</label>
+		<input type="text" name="quote" id="quote" value="<?php echo $row->quote; ?>"/>
+	</p>
+	<p>
+		<label for="review">Review:</label>
+		<textarea rows="4" cols="20" name="review" id="review"><?php echo $row->review; ?></textarea>
+	</p>
+	<p>
+		<label for="favorite">Add to Favorites?</label>
+		<input type="radio" name="favorite" value="Yes">Yes<br>
+		<input type="radio" name="favorite" value="No">No
+	</p>
+
+	<p>
 		<input type="submit" value="submit">
 	</p>
 	<?php echo form_close();?>
