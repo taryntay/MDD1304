@@ -17,6 +17,7 @@ class User_model extends CI_Model{
 	
 	function create_user() //create a new user in the Database.
 	{
+		
 		$new_user_insert_data = array(
 			'first_name' => $this->input->post('first_name'),
 			'last_name' => $this->input->post('last_name'),
@@ -27,6 +28,7 @@ class User_model extends CI_Model{
 		$insert = $this->db->insert('users', $new_user_insert_data);
 		
 		return $insert; //return the new user to the controller.
+		
 	}
 }
 ?>

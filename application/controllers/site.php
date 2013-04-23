@@ -14,7 +14,7 @@
 		
 			if(!isset($is_logged_in) || $is_logged_in != true) //validate that user is logged in
 			{
-				echo ('Not allowed. <a href="../login">Login</a>'); 
+				echo ('You must be logged in to access this application. <br /><a href="../login">Login Now</a>'); 
 				//if user is not logged in, show error message and login link.
 				die();
 			}

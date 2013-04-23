@@ -8,4 +8,3 @@
 	<link rel="stylesheet" type="text/css" href="http://localhost:8888/MDD1304/assets/css/main.css">
 </head>
 <body>
-<h1>Hi there!</h1>
