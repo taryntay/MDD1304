@@ -1,76 +1,82 @@
 <?php  
     class Login extends CI_Controller{  
     
-       function index()  
+       function index()  //loads the login form view by default.
         {  
-        	$data['main_content'] = 'login_form';
+        	$data['main_content'] = 'login_form'; //dynamically generates the view.
         	$this->load->view('includes/template', $data);
         }  
         
-        function validate_credentials()
+        function validate_credentials() //when username and password are entered, this function runs to check.
         {
         	$this->load->model('user_model');
         	$query = $this->user_model->validate();
         	
-        	if($query) //if users credentials are validated…
+        	if($query) //if users credentials are validated,
         	{
         		$data = array(
         			'username' => $this->input->post('username'),
         			'is_logged_in' => true
         		);
         		
-        		$this->session->set_userdata($data);
+        		$this->session->set_userdata($data); //set the session with username and logged in = true.
         		
-        		redirect('site/bookworm');
+        		redirect('site/bookworm'); //redirect to the main app.
         	}
         	
-        	else
+        	else //if credentials are not validated,
         	{
         		$data['main_content'] = 'login_form';
         		$this->load->view('includes/template', $data);
-        		echo('Username and/or password is incorrect. Please try again.');
+        		echo('Username and/or password is incorrect. Please try again.'); //load login form with error message.
         	}
         }
         
-        function signup()
+        function signup() //if create account link is clicked, load the signup page view.
         {
         	$data['main_content'] = 'signup_form';
         	$this->load->view('includes/template', $data);
         }
         
-        function create_user()
+        function create_user() //when signup form is filled out, create user is run.
         {
-        
 			$this->load->library('form_validation');
+			//this library helps to check if the forms are validated.
 			//field name, error message, validation rules.
 			
 			$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
 			$this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
+			//validate first name and last name inputs.
 			
 			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
 			$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
+			//validate username and password inputs.
 			
-			if($this->form_validation->run() == FALSE)
+			if($this->form_validation->run() == FALSE) //if it does not validate...
 			{
-				$this->signup();
+				$this->signup(); //stay on the signup form. error message from validation will show.
 			}
-			else
+			else //if form does validate...
 			{
-				$this->load->model('user_model');
-				if($query = $this->user_model->create_user())
+				$this->load->model('user_model'); //load the user model to create a new user to the database.
+				if($query = $this->user_model->create_user()) //if user is created..
 				{
-					$data['main_content'] = 'signup_successful';
+					$data['main_content'] = 'signup_successful'; //show success page.
 					$this->load->view('includes/template', $data);
 				}
-				else
+				else //if user cannot be created, show the signup form again with errors.
 				{
-					$this->load->view('signup_form');
+					$data['main_content'] = 'signup_form'; //dynamically generates the view.
+        			$this->load->view('includes/template', $data);
 				}
 			}
-        	
-        }
+        } //create user
 
-        
+        	
+		public function logout() //logout function destroys the session and loads login form. runs when logout clicked.
+		{
+			$this->session->sess_destroy();
+			$this->index();
+		}
  	}  
-     
 ?>

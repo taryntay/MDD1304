@@ -9,5 +9,26 @@
 	<link href="../../libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="../../libraries/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
+
 <body>
-<h1>Hi there!</h1>
+
+	<h2>Create</h2>
+	<?php echo form_open('site/add');?>
+	<p>
+		<label for="title">Title</label>
+		<input type="text" name="title" id="title" />
+	</p>
+	
+	<p>
+		<label for="author">Author</label>
+		<input type="text" name="author" id="author" />
+	</p>
+	<p>
+		<input type="submit" value="submit">
+	</p>
+	<?php echo form_close();?>
+	<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
+	
+</body>
+
+</html>
