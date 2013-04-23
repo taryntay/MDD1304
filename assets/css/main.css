@@ -1,8 +1,9 @@
 /* ---------------------------Body and Container-------------------------- */
 
 	body {
-		background-color: #fff;
-		margin: 40px;
+		background-color: #ededed;
+		margin: 0px;
+		padding: 0px;
 		font: 13px/20px normal Arial, sans-serif;
 		color: #494949;
 	}
@@ -32,14 +33,59 @@
 		margin: 0 0 14px 0;
 		padding: 14px 15px 10px 15px;
 	}
+	
+	h2 {
+		color: #494949;
+		font: Arial, sans-serif;
+		font-weight: normal;
+	}
 
 
 /* ---------------------------Body Div-------------------------- */
 	#body{
-		margin: 10px;
-		padding: 10px;
-		width: 30%;
+		margin: 250px auto 0;
+		padding: 1em;
+		width: 300px;
+		background: #fff;
 		border: 1px solid #494949;
+	}
+	
+/* ---------------------------Login-------------------------- */
+	
+	#login_form {
+		width: 300px;
+		background: #fff;
+		border: 1px solid #494949;
+		margin: 250px auto 0;
+		padding: 1em;
+	}
+	
+	input[type=text], input[type=password] {
+		display: block;
+		margin: 0 0 1em 0;
+		width: 280px;
+		padding: 1em;
+	}
+	
+	input[type=submit] {
+		border: none;
+		margin-right: 1em;
+		padding: 6px;
+		text-decoration: none;
+		font-size: 12px;
+		background: #696969;
+		color: white;
+	}
+	
+	input[type=submit]:hover {
+		background: #333;
+		cursor: pointer;
+	}
+	
+	form a {
+		text-decoration: none;
+		color: #333;
+	
 	}
 	
 /* ---------------------------Images-------------------------- */

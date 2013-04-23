@@ -9,36 +9,20 @@
 </head>
 
 <body>
-
-	<!-- Facebook API Connection with JS SDK -->
-	<script>
- 	 window.fbAsyncInit = function() {
-   	 // init the FB JS SDK
-   	 FB.init({
-      appId      : '539717602746861',                        // App ID from the app dashboard
-      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
-      status     : true,                                 // Check Facebook Login status
-      xfbml      : true                                  // Look for social plugins on the page
-   	 });
-
-    // Additional initialization code such as adding Event Listeners goes here
-  	};
-
- 	 // Load the SDK asynchronously
- 	 (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-  	 }(document, 'script', 'facebook-jssdk'));
-	</script>
-	
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		
 	<div id="container">
 
 		<div id="body">
 		
 		<img src="http://localhost:8888/MDD1304/assets/images/logo.png"><p></p>
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div><br /><br />
 				<?php 
 
 					foreach($results as $row){
@@ -54,7 +38,7 @@
 						echo $row->favorite;
 					}
 				?>
-		<p></p><a href="http://localhost:8888/MDD1304/">Home</a></p>
+		<p></p><a href="http://localhost:8888/MDD1304/index.php/bookworm/loadApp/">Home</a></p>
 				
 		</div>
 	</div>
