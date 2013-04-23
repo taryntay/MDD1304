@@ -3,8 +3,8 @@
 foreach($results as $row){}
 ?>
 
-
-	<h2>Update</h2>
+<fieldset>
+	<h1>Edit a Book</h1>
 	<?php echo form_open('site/edit/' .$this->uri->segment(3));?>
 	<p>
 		<label for="title">Title</label>
@@ -17,16 +17,15 @@ foreach($results as $row){}
 	</p>
 	<p>
 		<label for="quote">Favorite Quote:</label>
-		<input type="text" name="quote" id="quote" value="<?php echo $row->quote; ?>"/>
+		<textarea rows="3" cols="40" name="quote" id="quote"><?php echo $row->quote; ?></textarea>
 	</p>
 	<p>
 		<label for="review">Review:</label>
-		<textarea rows="4" cols="20" name="review" id="review"><?php echo $row->review; ?></textarea>
+		<textarea rows="5" cols="40" name="review" id="review"><?php echo $row->review; ?></textarea>
 	</p>
 	<p>
 		<label for="favorite">Add to Favorites?</label>
-		<input type="radio" name="favorite" value="Yes">Yes<br>
-		<input type="radio" name="favorite" value="No">No
+		<input type="radio" name="favorite" value="Yes">Yes <input type="radio" name="favorite" value="No" checked="checked">No
 	</p>
 
 	<p>
@@ -34,7 +33,7 @@ foreach($results as $row){}
 	</p>
 	<?php echo form_close();?>
 	<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
-	
+</fieldset>	
 </body>
 
 </html>

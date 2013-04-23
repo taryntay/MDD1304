@@ -61,6 +61,14 @@
 		padding: 1em;
 	}
 	
+	fieldset {
+		width: 300px;
+		background: #fff;
+		border: 1px solid #494949;
+		margin: 250px auto 0;
+		padding: 1em;	
+	}
+	
 	input[type=text], input[type=password] {
 		display: block;
 		margin: 0 0 1em 0;
@@ -84,8 +92,8 @@
 	}
 	
 	form a {
-		text-decoration: none;
 		color: #333;
+		text-decoration: underline;
 	
 	}
 	

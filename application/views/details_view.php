@@ -14,15 +14,15 @@
 				<?php 
 
 					foreach($results as $row){
-						echo "Title: ";
+						echo "<b>Title: </b>";
 						echo $row->title;
-						echo "<br />Author: ";
+						echo "<b><p>Author: </b>";
 						echo $row->author;
-						echo "<br />Favorite Quote: ";
+						echo "<b><p>Favorite Quote: </b>";
 						echo $row->quote;
-						echo "<br />Review: ";
+						echo "<b><p>Review: </b>";
 						echo $row->review;
-						echo "<br />Favorite: ";
+						echo "<b><p>Favorite: </b>";
 						echo $row->favorite;
 					}
 				?>
