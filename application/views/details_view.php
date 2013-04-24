@@ -8,8 +8,9 @@
 		
 <div id="container">
 <div id="body">
-		
+<?php foreach ($results as $row){}?>		
 		<img src="http://localhost:8888/MDD1304/assets/images/logo.png"><p></p>
+		<h1>Book Details: <?php echo $row->title; ?></h1>
 		<div class="fb-like" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div><br /><br />
 				<?php 
 

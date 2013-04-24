@@ -1,5 +1,6 @@
 <div id="login_form">
-	<h1>Login to Bookworm</h1>
+<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
+	<h1>Login</h1>
 	<?php
 		echo form_open('login/validate_credentials');
 		echo form_input('username', 'Username');

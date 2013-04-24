@@ -1,4 +1,6 @@
-<fieldset><h1>Add a Book</h1>
+<fieldset>
+<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
+<h1>Add a Book</h1>
 	<?php echo form_open('site/add');?>
 	<p>
 		<label for="title">Title:</label>

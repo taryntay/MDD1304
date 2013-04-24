@@ -1,7 +1,7 @@
 <div id="container">
 <div id="body">
 	<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
-		<h2>Recent Books</h2>
+		<h1>Recent Books</h1>
 				<?php 
 	
 					foreach($results as $row){

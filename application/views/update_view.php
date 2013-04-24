@@ -4,6 +4,7 @@ foreach($results as $row){}
 ?>
 
 <fieldset>
+<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
 	<h1>Edit a Book</h1>
 	<?php echo form_open('site/edit/' .$this->uri->segment(3));?>
 	<p>
@@ -33,7 +34,7 @@ foreach($results as $row){}
 	</p>
 	<?php echo form_close();?>
 	<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
-</fieldset>	
+</fieldset>
 </body>
 
 </html>
