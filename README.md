@@ -6,7 +6,7 @@ Book Worm is an application for users to track, store and share information abou
 
 To get Book Worm working with MAMP:
 
-1. Download and place this entire folder directly into 'htdocs' within MAMP. Please make sure that the folder is named MDD1304.
+1. Download and place this entire folder directly into 'htdocs' within MAMP. Please make sure that the folder is named: MDD1304.
 	(Important: do not place in a subfolder.)
 
 2. Within application->config->config.php, update the following on line 17:
