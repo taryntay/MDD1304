@@ -1,6 +1,6 @@
 <fieldset>
 <h1>Sign Up</h1>
-<h2>Personal Information</h2>
+<h2>Your Name</h2>
 <?php
 	echo form_open('login/create_user');
 	echo form_input('first_name', set_value('first_name', 'First Name'));

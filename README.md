@@ -6,11 +6,12 @@ Book Worm is an application for users to track, store and share information abou
 
 To get Book Worm working with MAMP:
 
-1. Download and place this entire folder directly into 'htdocs' within MAMP. (Important- do not place in a subfolder.)
+1. Download and place this entire folder directly into 'htdocs' within MAMP. Please make sure that the folder is named MDD1304.
+	(Important: do not place in a subfolder.)
 
 2. Within application->config->config.php, update the following on line 17:
 
-	$config['base_url'] = 'http://localhost:8888/**folder name goes here**/';
+	$config['base_url'] = 'http://localhost:8888/MDD1304/';
 
 3. Create a new database on your local machine called bookworm. This is where you can import the SQL dump.
 
@@ -21,5 +22,6 @@ I learned to work with CodeIgniter by reading and following tutorials at the fol
 In particular, these helped me build the login and sign up pages, as well as data CRUD.
 
 http://net.tutsplus.com/sessions/codeigniter-from-scratch/
+
 http://ellislab.com/codeigniter/user-guide/
 
