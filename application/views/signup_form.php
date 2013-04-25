@@ -1,4 +1,5 @@
 <fieldset>
+<p><?php echo anchor('login', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
 <h1>Sign Up</h1>
 <h2>Your Name</h2>
 <?php
@@ -16,5 +17,5 @@
 ?>
 
 <?php echo validation_errors('<p class="error">');?>
-<p>Already have an account? <u><?php echo anchor('login', 'Login', 'Login');?></u>.</p>
+<p>Already have an account? <u><?php echo anchor('login', 'Login', 'Login');?></u></p>
 </fieldset>

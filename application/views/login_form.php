@@ -1,5 +1,5 @@
 <div id="login_form">
-<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
+<p><?php echo anchor('login', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
 	<h1>Login</h1>
 	<?php
 		echo form_open('login/validate_credentials');

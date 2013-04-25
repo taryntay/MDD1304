@@ -14,8 +14,10 @@ foreach($results as $row){}
 ?>
 <?php $first_name = $_POST['first_name']; ?>
 <div id="body">
+<p><?php echo anchor('site/bookworm', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
 <h1>Congrats, <?php echo $first_name; ?></h1>
 <p>Your account has been created. <?php echo anchor('login', 'Login Now');?>.</p>
+
 </body>
 
 </body>

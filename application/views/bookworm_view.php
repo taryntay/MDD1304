@@ -1,6 +1,6 @@
 <div id="container">
 <div id="body">
-	<p><img src="http://localhost:8888/MDD1304/assets/images/logo.png"></p>
+	<p><?php echo anchor('site/bookworm', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
 		<h1>Recent Books</h1>
 				<?php 
 	
