@@ -17,5 +17,8 @@
 ?>
 
 <?php echo validation_errors('<p class="error">');?>
-<p>Already have an account? <u><?php echo anchor('login', 'Login', 'Login');?></u></p>
+<p><u><?php echo anchor('login', 'Already signed up? Login now.', 'Login');?></u></p>
+<div id="footer">
+<p>&copy; 2013 Taryn Taylor for Full Sail University<br /><a href="mailto:taryntay@fullsail.edu">Contact</a> | <?php echo anchor('site/terms', 'Terms of Use', 'Terms');?></p>
+</div>
 </fieldset>

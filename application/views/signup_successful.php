@@ -16,8 +16,14 @@ foreach($results as $row){}
 <div id="body">
 <p><?php echo anchor('site/bookworm', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
 <h1>Congrats, <?php echo $first_name; ?></h1>
-<p>Your account has been created. <?php echo anchor('login', 'Login Now');?>.</p>
+<p>Your account has been created. 
 
+	<?php echo form_open("login");?>
+		<input type="submit" value="Return to Login">
+	<?php echo form_close();?>
+<div id="footer">
+<p>&copy; 2013 Taryn Taylor for Full Sail University<br /><a href="mailto:taryntay@fullsail.edu">Contact</a> | <?php echo anchor('site/terms', 'Terms of Use', 'Terms');?></p>
+</div>
 </body>
 
 </body>

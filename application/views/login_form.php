@@ -8,4 +8,5 @@
 		echo form_submit('submit', 'Login');
 		echo anchor('login/signup', 'Create an Account');
 	?>
+	
 </div>

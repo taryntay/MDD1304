@@ -29,18 +29,16 @@
 				?>
 				
 		<?php echo form_open("site/update/$row->bookId");?>
-		<p>
 			<input type="submit" value="Edit">
-		</p>
 		<?php echo form_close();?>
 		<?php echo form_open("site/delete/$row->bookId");?>
-		<p>
 			<input type="submit" value="Delete">
-			<br />Warning: Deleting a book cannot be undone.
-		</p>
 		<?php echo form_close();?>
-		
-		<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
-				
+		<?php echo form_open("site/bookworm");?>
+			<input type="submit" value="Home">
+		<?php echo form_close();?>
+		<div id="footer">
+<p>&copy; 2013 Taryn Taylor for Full Sail University<br /><a href="mailto:taryntay@fullsail.edu">Contact</a> | <?php echo anchor('site/terms', 'Terms of Use', 'Terms');?></p>
+</div>		
 </div>
 </div>

@@ -21,14 +21,21 @@
 	</p>
 	<p>
 		<label for="favorite">Add to Favorites?</label>
-		<input type="radio" name="favorite" value="Yes">Yes <input type="radio" name="favorite" value="No" checked="checked">No
+		<br /><input type="radio" name="favorite" value="Yes">Yes
+		<br /><input type="radio" name="favorite" value="No" checked="checked">No
 	</p>
 	<p>
-		<input type="submit" value="submit">
+		<input type="submit" value="Add">
 	</p>
 	
 	<?php echo form_close();?>
-	<p><?php echo anchor('site/bookworm', 'Home', 'Home Page');?></p>
+	<?php echo form_open("site/bookworm");?>
+		<input type="submit" value="Home">
+	<?php echo form_close();?>
+	
+<div id="footer">
+<p>&copy; 2013 Taryn Taylor for Full Sail University<br /><a href="mailto:taryntay@fullsail.edu">Contact</a> | <?php echo anchor('site/terms', 'Terms of Use', 'Terms');?></p>
+</div>
 </fieldset>	
 </body>
 
