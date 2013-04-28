@@ -7,11 +7,17 @@
 	echo form_input('first_name', set_value('first_name', 'First Name'));
 	echo form_input('last_name', set_value('last_name', 'Last Name'));
 ?>
-
+<h2>Email</h2>
+<?php 
+	echo form_input('email', set_value('email', 'Email Address'));
+?>
+<p>
+<form><input type="checkbox" name="newsletter" value="newsletter" checked> Would you like to receive our newsletter?</form></p>
 <h2>Login Info</h2>
 <?php
 	echo form_input('username', set_value('username', 'Username'));
-	echo form_password('password', set_value('password', 'Password'));
+	echo form_input('password', set_value('password', 'Password'));
+	echo form_input('passwordConfirm', set_value('passwordConfirm', 'Confirm Password'));
 	
 	echo form_submit('submit', 'Create Account');
 ?>
