@@ -109,5 +109,11 @@
 		
 			$this->bookworm(); //load the homepage with newly updated book.
 		}
+		
+		public function terms() //load the terms and conditions view.
+		{
+			$data['main_content'] = 'terms_view'; //dynamically generates the view.
+        	$this->load->view('includes/template', $data);
+		}
 	}//class
 ?>
