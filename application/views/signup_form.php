@@ -11,8 +11,7 @@
 <?php 
 	echo form_input('email', set_value('email', 'Email Address'));
 ?>
-<p>
-<form><input type="checkbox" name="newsletter" value="newsletter" checked> Would you like to receive our newsletter?</form></p>
+
 <h2>Login Info</h2>
 <?php
 	echo form_input('username', set_value('username', 'Username'));
