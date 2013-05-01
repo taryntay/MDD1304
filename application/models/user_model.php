@@ -34,9 +34,9 @@ class User_model extends CI_Model{
 	
 	function getUser()
 	{
-		$id = 4;
-		$query = $this->db->query("SELECT * FROM users WHERE (id = $id)");
-		return $query->result(); //pass results book to the controller.
+		/*$id = 4;*/
+		$query = $this->db->query("SELECT * FROM users");
+		return $query->result(); //pass results user to the controller.
 	}
 }
 ?>

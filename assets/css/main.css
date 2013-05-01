@@ -177,14 +177,21 @@
 
 /* ------------------------Media Queries----------------------- */
 
-	/*@media only screen
+	@media only screen
 	and (min-device-width: 320px) 
 	and (max-device-width: 480px) {
 	 	
-	 	#login_form {
-	 		width: 50px;
+	 	#container {
+	 		width: 100px;
 	 	}
-	 }*/
+	 	#body {
+	 		width: 100px;
+	 	}
+	 	
+	 	#login_form {
+	 		width: 100px;
+	 	}
+	 }
 	
 	/*@media (max-width: 768px) { 
 		input[type=text], input[type=password] { width: 300px; }

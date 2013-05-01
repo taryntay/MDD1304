@@ -115,5 +115,11 @@
 			$data['main_content'] = 'terms_view'; //dynamically generates the view.
         	$this->load->view('includes/template', $data);
 		}
+		
+		public function profile() //load the profile view
+		{
+			$data['main_content'] = 'profile_view'; //dynamically generates the view.
+        	$this->load->view('includes/template', $data);
+		}
 	}//class
 ?>
