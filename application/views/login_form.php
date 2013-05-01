@@ -1,5 +1,8 @@
 <div id="login_form">
-<p><?php echo anchor('login', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
+<?php 
+$logo = img('assets/images/logo.png');
+?>
+<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
 	<h1>Login</h1>
 	<?php echo form_open('login/validate_credentials'); ?>
 	

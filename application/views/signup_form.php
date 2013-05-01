@@ -1,5 +1,8 @@
 <fieldset>
-<p><?php echo anchor('login', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
+<?php 
+$logo = img('assets/images/logo.png');
+?>
+<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
 <h1>Sign Up</h1>
 <h2>Your Name</h2>
 <?php

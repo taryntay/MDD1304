@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Book Worm</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:8888/MDD1304/assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/main.css">
 </head>
 <body>
 
@@ -14,7 +14,10 @@ foreach($results as $row){}
 ?>
 <?php $first_name = $_POST['first_name']; ?>
 <div id="body">
-<p><?php echo anchor('site/bookworm', '<img src="http://localhost:8888/MDD1304/assets/images/logo.png">', 'Home Page');?></p>
+<?php 
+$logo = img('assets/images/logo.png');
+?>
+<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
 <h1>Congrats, <?php echo $first_name; ?></h1>
 <p>Your account has been created. 
 
