@@ -4,6 +4,7 @@ $logo = img('assets/images/logo.png');
 ?>
 <p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
 <h1>Sign Up</h1>
+<?php echo validation_errors('<p class="error">Error: ');?>
 <h2>Your Name</h2>
 <?php
 	echo form_open('login/create_user');
@@ -19,7 +20,6 @@ $logo = img('assets/images/logo.png');
 <input type="submit" value="Create Account">
 
 
-<?php echo validation_errors('<p class="error">');?>
 <p><u><?php echo anchor('login', 'Already signed up? Login now.', 'Login');?></u></p>
 <div id="footer">
 <p>&copy; 2013 Taryn Taylor for Full Sail University<br /><a href="mailto:taryntay@fullsail.edu">Contact</a> | <?php echo anchor('site/terms', 'Terms of Use', 'Terms');?></p>

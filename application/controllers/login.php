@@ -28,7 +28,7 @@
         	{
         		$data['main_content'] = 'login_form';
         		$this->load->view('includes/template', $data);
-        		echo('Username and/or password is incorrect. Please try again.'); //load login form with error message.
+        		echo('<p class="error">Error: Username and/or password is incorrect. Please try again.</p>'); //load login form with error message.
         	}
         }
         
@@ -49,7 +49,7 @@
 			
 			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');
 			$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[4]|max_length[32]');
-			$this->form_validation->set_rules('passwordConfirm', 'ConfirmPassword', 'trim|required|matches[password]');
+			$this->form_validation->set_rules('passwordConfirm', 'Confirm Password', 'trim|required|matches[password]');
 			//validate username and password inputs. must be greater than 4 chars and passwords match.
 			
 			if($this->form_validation->run() == FALSE) //if it does not validate...

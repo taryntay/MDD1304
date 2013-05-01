@@ -8,20 +8,20 @@ $logo = img('assets/images/logo.png');
 	<h1>Edit a Book</h1>
 	<?php echo form_open('site/edit/' .$this->uri->segment(3));?>
 	<p>
-		<label for="title">Title</label>
+		<label for="title">Title</label><br />
 		<input type="text" name="title" id="title" value="<?php echo $row->title; ?>"/>
 	</p>
 	
 	<p>
-		<label for="author">Author</label>
+		<label for="author">Author</label><br />
 		<input type="text" name="author" id="author" value="<?php echo $row->author; ?>"/>
 	</p>
 	<p>
-		<label for="quote">Favorite Quote:</label>
+		<label for="quote">Favorite Quote</label><br />
 		<textarea rows="3" cols="40" name="quote" id="quote"><?php echo $row->quote; ?></textarea>
 	</p>
 	<p>
-		<label for="review">Review:</label>
+		<label for="review">Review</label><br />
 		<textarea rows="5" cols="40" name="review" id="review"><?php echo $row->review; ?></textarea>
 	</p>
 	<p>
