@@ -20,9 +20,7 @@ class User_model extends CI_Model{
 		
 		$new_user_insert_data = array(
 			'first_name' => $this->input->post('first_name'),
-			'last_name' => $this->input->post('last_name'),
 			'username' => $this->input->post('username'),
-			'email' => $this->input->post('email'),
 			'password' => MD5($this->input->post('password'))
 		);
 		//using all of the information entered into the signup form, create a new user.

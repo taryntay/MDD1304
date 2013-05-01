@@ -45,8 +45,6 @@
 			//field name, error message, validation rules.
 			
 			$this->form_validation->set_rules('first_name', 'Name', 'trim|required');
-			$this->form_validation->set_rules('last_name', 'Last Name', 'trim|required');
-			$this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
 			//validate first name and last name inputs.
 			
 			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[4]');

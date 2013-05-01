@@ -4,22 +4,17 @@
 <h2>Your Name</h2>
 <?php
 	echo form_open('login/create_user');
-	echo form_input('first_name', set_value('first_name', 'First Name'));
-	echo form_input('last_name', set_value('last_name', 'Last Name'));
-?>
-<h2>Email</h2>
-<?php 
-	echo form_input('email', set_value('email', 'Email Address'));
 ?>
 
+<input type="text" name="first_name" id="first_name" placeholder="full name" />
+
 <h2>Login Info</h2>
-<?php
-	echo form_input('username', set_value('username', 'Username'));
-	echo form_input('password', set_value('password', 'Password'));
-	echo form_input('passwordConfirm', set_value('passwordConfirm', 'Confirm Password'));
-	
-	echo form_submit('submit', 'Create Account');
-?>
+
+<input type="text" name="username" id="username" placeholder="username" />
+<input type="text" name="password" id="password" placeholder="password" />
+<input type="text" name="passwordConfirm" id="passwordConfirm" placeholder="confirm password" />
+<input type="submit" value="Create Account">
+
 
 <?php echo validation_errors('<p class="error">');?>
 <p><u><?php echo anchor('login', 'Already signed up? Login now.', 'Login');?></u></p>

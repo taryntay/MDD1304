@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.25)
 # Database: bookworm
-# Generation Time: 2013-05-01 00:06:33 +0000
+# Generation Time: 2013-05-01 01:31:04 +0000
 # ************************************************************
 
 
@@ -59,34 +59,33 @@ CREATE TABLE `users` (
   `first_name` varchar(20) NOT NULL DEFAULT '',
   `username` varchar(10) NOT NULL,
   `password` varchar(32) NOT NULL DEFAULT '',
-  `last_name` varchar(20) NOT NULL DEFAULT '',
   `newsletter` tinyint(1) DEFAULT NULL,
-  `email` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`id`, `first_name`, `username`, `password`, `last_name`, `newsletter`, `email`)
+INSERT INTO `users` (`id`, `first_name`, `username`, `password`, `newsletter`)
 VALUES
-	(1,'Taryn','taryn','34819d7beeabb9260a5c854bc85b3e44','Taylor',NULL,''),
-	(2,'Matthew','manderson','32b6aa53d5644377d7f8c2e7001e7fdf','Anderson',NULL,''),
-	(3,'John','jdoe','f4eb27cea7255cea4d1ffabf593372e8','Doe',NULL,''),
-	(28,'Johnny','apples','daeccf0ad3c1fc8c8015205c332f5b42','Appleseed',NULL,''),
-	(4,'Tiffany','tifftht','2d5ea6a425103cacd243fabd27aa6cc6','Taylor',NULL,''),
-	(5,'Myname','myusername','a029d0df84eb5549c641e04a9ef389e5','YourName',NULL,''),
-	(31,'First Name','Username','dc647eb65e6711e155375218212b3964','Last Name',NULL,''),
-	(30,'Tom','tomjones','65f185ec6bd47af8f082f8196d0b4d24','Jones',NULL,''),
-	(29,'Sam','samjones','f5018389773b7cf2ba416f56119968dc','Jones',NULL,''),
-	(6,'John','jsmith','6c569aabbf7775ef8fc570e228c16b98','Smith',NULL,''),
-	(41,'Julie','juliea','18d6769919266cd0bd6cd78aa405d5d0','Andrews',NULL,''),
-	(40,'myname','myuser','a029d0df84eb5549c641e04a9ef389e5','mylastname',NULL,''),
-	(39,'First Name','Username','dc647eb65e6711e155375218212b3964','Last Name',NULL,''),
-	(42,'Billy','billybob','93b542f0c7a6f2279fc94f44b013baf1','Bob',NULL,'billybob@gmail.com'),
-	(43,'Taryn','laynie','9f80f4d1bc08f1325c72af4306bdeaf7','Layne',NULL,'tlayne@gmail.com'),
-	(44,'Tanner','tanner','177f6b75da142d09d92cab3c06218e2c','Taylor',NULL,'tanner@tanner.com'),
-	(45,'Tanner','tanner','177f6b75da142d09d92cab3c06218e2c','Taylor',NULL,'tanner@tanner.com');
+	(1,'Taryn','taryn','34819d7beeabb9260a5c854bc85b3e44',NULL),
+	(2,'Matthew','manderson','32b6aa53d5644377d7f8c2e7001e7fdf',NULL),
+	(3,'John','jdoe','f4eb27cea7255cea4d1ffabf593372e8',NULL),
+	(28,'Johnny','apples','daeccf0ad3c1fc8c8015205c332f5b42',NULL),
+	(4,'Tiffany','tifftht','2d5ea6a425103cacd243fabd27aa6cc6',NULL),
+	(5,'Myname','myusername','a029d0df84eb5549c641e04a9ef389e5',NULL),
+	(31,'First Name','Username','dc647eb65e6711e155375218212b3964',NULL),
+	(30,'Tom','tomjones','65f185ec6bd47af8f082f8196d0b4d24',NULL),
+	(29,'Sam','samjones','f5018389773b7cf2ba416f56119968dc',NULL),
+	(6,'John','jsmith','6c569aabbf7775ef8fc570e228c16b98',NULL),
+	(41,'Julie','juliea','18d6769919266cd0bd6cd78aa405d5d0',NULL),
+	(40,'myname','myuser','a029d0df84eb5549c641e04a9ef389e5',NULL),
+	(39,'First Name','Username','dc647eb65e6711e155375218212b3964',NULL),
+	(42,'Billy','billybob','93b542f0c7a6f2279fc94f44b013baf1',NULL),
+	(43,'Taryn','laynie','9f80f4d1bc08f1325c72af4306bdeaf7',NULL),
+	(44,'Tanner','tanner','177f6b75da142d09d92cab3c06218e2c',NULL),
+	(45,'Tanner','tanner','177f6b75da142d09d92cab3c06218e2c',NULL),
+	(46,'Clover Belle','clovie','177f6b75da142d09d92cab3c06218e2c',NULL);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
