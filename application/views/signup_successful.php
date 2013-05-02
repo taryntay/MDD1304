@@ -17,7 +17,7 @@ foreach($results as $row){}
 <?php 
 $logo = img('assets/images/logo.png');
 ?>
-<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
+<p><?php echo anchor('login', $logo, 'Home Page');?></p>
 <h1>Congrats, <?php echo $first_name; ?></h1>
 <p>Your account has been created. 
 

@@ -2,7 +2,7 @@
 <?php 
 $logo = img('assets/images/logo.png');
 ?>
-<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
+<p><?php echo anchor('login', $logo, 'Home Page');?></p>
 	<h1>Login</h1>
 	<?php echo form_open('login/validate_credentials'); ?>
 	

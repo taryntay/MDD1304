@@ -2,7 +2,7 @@
 <?php 
 $logo = img('assets/images/logo.png');
 ?>
-<p><?php echo anchor('site/bookworm', $logo, 'Home Page');?></p>
+<p><?php echo anchor('login', $logo, 'Home Page');?></p>
 <h1>Sign Up</h1>
 <?php echo validation_errors('<p class="error">Error: ');?>
 <h2>Your Name</h2>
